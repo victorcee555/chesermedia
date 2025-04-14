@@ -1,0 +1,248 @@
+<script type="text/javascript">
+    var gk_fileData = {};
+    function loadFileData(filename) {
+      return gk_fileData[filename] || "";
+    }
+    </script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CHESER MEDIA - Cherubim and Seraphim Church</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-20px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes textGlow {
+            0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+            50% { text-shadow: 0 0 15px rgba(255, 215, 0, 0.8), 0 0 25px rgba(255, 215, 0, 0.6); }
+            100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+        }
+        .animate-fadeInUp { animation: fadeInUp 1s ease-out forwards; }
+        .animate-pulse { animation: pulse 2s infinite; }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .animate-slideIn { animation: slideIn 1s ease-out forwards; }
+        .animate-textGlow { animation: textGlow 3s ease-in-out infinite; }
+        .hover-scale:hover { transition: transform 0.3s; transform: scale(1.05); }
+        .gradient-header {
+            background: linear-gradient(90deg, #FFD700, #FFFFFF, #FFD700, #F0E68C, #FFFFFF);
+            background-size: 400%;
+            animation: gradientAnimation 15s ease infinite;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        body {
+            background: linear-gradient(135deg, #FFF8DC, #FFD700, #FFEC8B, #F0E68C, #FFFACD);
+            background-size: 200%;
+            animation: gradientAnimation 20s ease infinite;
+            background-attachment: fixed;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        p, li {
+            font-size: 1.125rem;
+        }
+    </style>
+</head>
+<body class="font-roboto">
+    <!-- Header Section -->
+    <header class="gradient-header text-black fixed w-full z-50 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-4xl font-playfair font-bold animate-textGlow">CHESER MEDIA</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-yellow-600 transition animate-slideIn font-semibold" style="animation-delay: 0.1s;">Home</a></li>
+                <li><a href="about.html" class="hover:text-yellow-600 transition animate-slideIn font-semibold" style="animation-delay: 0.2s;">About</a></li>
+                <li><a href="media.html" class="hover:text-yellow-600 transition animate-slideIn font-semibold" style="animation-delay: 0.3s;">Media</a></li>
+                <li><a href="music.html" class="hover:text-yellow-600 transition animate-slideIn font-semibold" style="animation-delay: 0.4s;">Music</a></li>
+                <li><a href="contact.html" class="hover:text-yellow-600 transition animate-slideIn font-semibold" style="animation-delay: 0.5s;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-80 pt-20" style="background-image: url('https://images.unsplash.com/photo-1582213780087-4d4d3dbed0eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80')">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-6 h-full flex items-center justify-center text-center relative z-10">
+            <div class="text-white">
+                <h1 class="text-4xl font-playfair font-bold mb-4 animate-fadeInUp">About CHESER MEDIA</h1>
+                <p class="text-lg max-w-2xl mx-auto animate-fadeInUp" style="animation-delay: 0.3s;">Discover our mission to celebrate the Cherubim and Seraphim Church.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Welcome to CHESER MEDIA Section -->
+    <section class="py-16 bg-white/90">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Welcome to CHESER MEDIA" class="rounded-lg shadow-lg hover-scale animate-fadeInUp">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="font-playfair font-bold text-gray-800 mb-4 animate-slideIn">Welcome to CHESER MEDIA</h2>
+                    <p class="text-gray-600 mb-6 animate-slideIn" style="animation-delay: 0.2s;">We are a dedicated Public Relations (PR) outfit focused on enhancing the image and telling the untold stories of the Cherubim and Seraphim Church (C & S Church). Our mission is to provide a fresh perspective, correct misconceptions, and showcase the rich history, vibrant culture, and untapped talents of the C & S Church.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission Section -->
+    <section class="py-16 bg-gray-50/90">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="md:w-1/2">
+                    <div class="relative w-full" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg hover-scale animate-fadeInUp" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="CHESER MEDIA Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="font-playfair font-bold text-gray-800 mb-4 animate-slideIn">Our Mission</h2>
+                    <p class="text-gray-600 mb-6 animate-slideIn" style="animation-delay: 0.2s;">At CHESER MEDIA, we believe that every story deserves to be told. Many are unfamiliar with the true history and deep spiritual significance of the C & S Church. Our primary mission is to bridge the gap between the church's rich heritage and the broader public through innovative media and communication strategies. By doing so, we aim to provide the C & S Church with the recognition it deserves and foster a deeper understanding of its values, beliefs, and impact.</p>
+                    <a href="#" class="inline-block bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transition animate-pulse">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do Section -->
+    <section class="py-16 bg-white/90">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-playfair font-bold text-gray-800 mb-4 animate-slideIn">What We Do</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-8 animate-slideIn" style="animation-delay: 0.2s;">We are not a church, but rather a private initiative that works tirelessly to create a positive narrative about the C & S Church. Our core activities include:</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-float">
+                    <div class="text-4xl text-yellow-500 mb-4">🎥</div>
+                    <h3 class="text-lg font-playfair font-semibold text-gray-800 mb-2">Documentaries & Podcasts</h3>
+                    <p class="text-gray-600">We produce and share high-quality documentaries and podcasts that dive into the history, people, and activities of the C & S Church.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-float" style="animation-delay: 0.3s;">
+                    <div class="text-4xl text-yellow-500 mb-4">🎶</div>
+                    <h3 class="text-lg font-playfair font-semibold text-gray-800 mb-2">Music Promotion & Reinvention</h3>
+                    <p class="text-gray-600">We focus on promoting the beautiful music of the C & S Church, bringing its powerful hymns to the forefront.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-float" style="animation-delay: 0.6s;">
+                    <div class="text-4xl text-yellow-500 mb-4">🎤</div>
+                    <h3 class="text-lg font-playfair font-semibold text-gray-800 mb-2">Concerts & Events</h3>
+                    <p class="text-gray-600">From intimate gatherings to large-scale concerts, we curate events that celebrate the C & S Church’s vibrant worship culture.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-float" style="animation-delay: 0.9s;">
+                    <div class="text-4xl text-yellow-500 mb-4">🌟</div>
+                    <h3 class="text-lg font-playfair font-semibold text-gray-800 mb-2">Showcasing Hidden Talents</h3>
+                    <p class="text-gray-600">We shine a spotlight on the wordsmiths, ministers, and other unsung heroes of the C & S Church.</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-lg hover-scale animate-float" style="animation-delay: 1.2s;">
+                    <div class="text-4xl text-yellow-500 mb-4">📺</div>
+                    <h3 class="text-lg font-playfair font-semibold text-gray-800 mb-2">Talk Shows & Movies</h3>
+                    <p class="text-gray-600">Through talk shows, interviews, and films, we bring the stories of the C & S Church to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why We Exist Section -->
+    <section class="py-16 bg-gray-50/90">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1516321310763-46fc0e83b1bf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Why We Exist" class="rounded-lg shadow-lg hover-scale animate-fadeInUp">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="font-playfair font-bold text-gray-800 mb-4 animate-slideIn">Why We Exist</h2>
+                    <p class="text-gray-600 mb-6 animate-slideIn" style="animation-delay: 0.2s;">The C & S Church has always been a community deeply rooted in faith, love, and unity. However, many are unaware of its significance, history, and contributions to both spirituality and society. CHESER MEDIA exists to fill that gap. Our goal is to promote accurate portrayals of the church, dispelling myths and providing a platform for its story to be told authentically.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Relationship with the C & S Church Section -->
+    <section class="py-16 bg-white/90">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1537724326059-2ea902340d99?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our Relationship" class="rounded-lg shadow-lg hover-scale animate-fadeInUp">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="font-playfair font-bold text-gray-800 mb-4 animate-slideIn">Our Relationship with the C & S Church</h2>
+                    <p class="text-gray-600 mb-6 animate-slideIn" style="animation-delay: 0.2s;">CHESER MEDIA operates under the larger AGBOJESU conference, which is one of the key divisions within the C & S Church. While we are an independent entity, our work is in close alignment with the church’s values and vision. We serve as a bridge, helping to modernize and share the church’s messages while staying deeply connected to its roots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Vision for the Future Section -->
+    <section class="py-16 bg-gray-50/90">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Our Vision" class="rounded-lg shadow-lg hover-scale animate-fadeInUp">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="font-playfair font-bold text-gray-800 mb-4 animate-slideIn">Our Vision for the Future</h2>
+                    <p class="text-gray-600 mb-4 animate-slideIn" style="animation-delay: 0.2s;">As we continue to grow, our vision for CHESER MEDIA is to become the leading platform for promoting the C & S Church, not only in local communities but across the globe. We aspire to:</p>
+                    <ul class="text-gray-600 list-disc pl-6 mb-6">
+                        <li class="animate-slideIn" style="animation-delay: 0.3s;">Expand our media presence with more documentaries, music, and live events.</li>
+                        <li class="animate-slideIn" style="animation-delay: 0.4s;">Create a platform for emerging talents from within the church and beyond.</li>
+                        <li class="animate-slideIn" style="animation-delay: 0.5s;">Establish partnerships with other organizations to further elevate the message and teachings of the C & S Church.</li>
+                        <li class="animate-slideIn" style="animation-delay: 0.6s;">Engage more deeply with the public through innovative digital strategies and collaborations.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="py-16 bg-white/90">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-playfair font-bold text-gray-800 mb-4 animate-slideIn">Join Us</h2>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-8 animate-slideIn" style="animation-delay: 0.2s;">At CHESER MEDIA, we are committed to spreading the word and spirit of the C & S Church. Whether you are a church member, an artist, a minister, or someone interested in learning more about the church, we invite you to join us on this journey. Together, we can share the beauty and significance of the C&S Church with the world.</p>
+            <a href="#" class="inline-block bg-yellow-400 text-black px-8 py-3 rounded-full font-semibold hover:bg-yellow-500 transition animate-pulse">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-gradient-to-r from-yellow-500 to-yellow-300 text-white text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="font-playfair font-bold mb-4 animate-slideIn">Join Our Journey</h2>
+            <p class="text-gray-100 max-w-2xl mx-auto mb-8 animate-slideIn" style="animation-delay: 0.2s;">Be a part of our mission to share the legacy of the Cherubim and Seraphim Church with the world.</p>
+            <a href="#" class="inline-block bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition animate-pulse">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-2xl font-playfair font-bold mb-4 md:mb-0 animate-slideIn">CHESER MEDIA</div>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-yellow-300 transition animate-slideIn" style="animation-delay: 0.1s;">Home</a></li>
+                    <li><a href="about.html" class="hover:text-yellow-300 transition animate-slideIn" style="animation-delay: 0.2s;">About</a></li>
+                    <li><a href="media.html" class="hover:text-yellow-300 transition animate-slideIn" style="animation-delay: 0.3s;">Media</a></li>
+                    <li><a href="music.html" class="hover:text-yellow-300 transition animate-slideIn" style="animation-delay: 0.4s;">Music</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-300 transition animate-slideIn" style="animation-delay: 0.5s;">Contact</a></li>
+                </ul>
+            </div>
+            <p class="text-center mt-6 text-gray-400 animate-fadeInUp">© 2025 CHESER MEDIA. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
